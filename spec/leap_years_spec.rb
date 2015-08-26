@@ -31,4 +31,19 @@ RSpec.describe LeapYears, "tell if leap year or not" do
  		expect(year.leaps?(100)).to eq false
  	end
 
+  it "gives false for 2001" do 
+    expect(year.leaps?(2001)).to eq false    
+ 	end
+
+ 	it "gives true for 1996" do
+ 		expect(year.leaps?(1996)).to eq true
+ 	end
+
+ 	it "gives false for 1900" do
+ 		expect(year.leaps?(1900)).to eq false
+ 	end
+
+  it "gives true for 2000" do 
+    expect(year.leaps?(2000)).to eq true    
+ 	end
 end
